@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+html {
+  min-height: calc(100% + env(safe-area-inset-top));
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  color: #454545;
+  padding: 0;
+  background-color: #faf9f8;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
