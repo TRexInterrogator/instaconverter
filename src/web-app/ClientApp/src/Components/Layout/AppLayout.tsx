@@ -13,7 +13,7 @@ export const AppLayout = (props: IAppLayoutProps) => {
     return (
         <div className="app-layout">
             <div className="app-layout-head">
-                
+                <h1>Insta Square Converter</h1>
             </div>
             <div className="app-layout-content">
                 { children }

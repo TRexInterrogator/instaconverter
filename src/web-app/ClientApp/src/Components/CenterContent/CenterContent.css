@@ -1,0 +1,18 @@
+.center-content {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.center-content-fade {
+    animation: center-content-fade-fadein  0.5s;
+}
+
+@keyframes center-content-fade-fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,97 @@
+.dropdown-can {
+    display: inline-block;
+}
+
+
+.dropdown {
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+    border: solid 1px #454545;
+    color: #454545;
+    cursor: pointer;
+    display: block;
+    user-select: none;
+}
+
+.dropdown-can p[id="lbl"] {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #454545;
+}
+
+.dropdown-disabled {
+    cursor: default;
+}
+
+.dropdown div {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+.dropdown span {
+    font-size: 16px;
+    margin-left: auto;
+}
+
+@media only screen and (max-width: 530px) {
+    .dropdown-can {
+        display: block;
+    }
+}
+
+
+.dropdown-options {
+    position: relative;
+}
+
+.dropdown-flyout {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px 0 rgb(0 0 0 / 10%);
+}
+
+.dropdown-option {
+    padding: 10px;
+    cursor: pointer;
+    transition: background 200ms;
+    background-color: transparent;
+}
+
+@media(hover: hover) and (pointer: fine) {
+    .dropdown-option:hover {
+        background-color: #f3f2f1;
+    }
+}
+
+.dropdown-option p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-option p[id="icon-lbl"] {
+    color: rgba(237, 110, 54, 1);
+}
+
+.dropdown-option p[id="icon-lbl"] span {
+    margin-right: 5px;
+    font-size: 20px;
+    line-height: inherit;
+}
