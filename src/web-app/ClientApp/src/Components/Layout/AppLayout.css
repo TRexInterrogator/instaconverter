@@ -1,0 +1,32 @@
+
+.app-layout {
+    position: relative;
+}
+
+.app-layout-head {
+    position: fixed;
+    top: env(safe-area-inset-top);
+    left: env(safe-area-inset-left);
+    right: env(safe-area-inset-right);
+    height: 62px;
+    background-color: white;
+    box-shadow: 0 4px 6px 0 rgb(0 0 0 / 10%);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-layout-head h1 {
+    font-size: 20px;
+}
+
+.app-layout-content {
+    position: fixed;
+    top: calc(env(safe-area-inset-top) + 62px);
+    left: env(safe-area-inset-left);
+    right: env(safe-area-inset-right);
+    bottom: 0;
+    overflow: auto;
+    background-color: rgb(222, 222, 222);
+}
