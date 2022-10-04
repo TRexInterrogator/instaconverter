@@ -1,0 +1,25 @@
+.cal-month-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white; 
+    padding: 20px 0px;
+}
+
+.cal-month-layout-date {
+    text-align: center;
+}
+
+.cal-month-layout-date p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    margin-top: 3px;
+}
+
+.cal-month-layout-date h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
