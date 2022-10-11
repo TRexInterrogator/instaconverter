@@ -86,8 +86,18 @@ export const CalendarLayoutPage = () => {
                     { layout_data.map(d => {
                         return (
                             <div key={d.index} className="cal-month-layout-date">
-                                <h3>{d.day}</h3>
-                                <p>{d.date_str}</p>
+                                { d.day === "SO" ?
+                                    <>
+                                        <h3 style={{ color: "#db1818" }}>{d.day}</h3>
+                                        <p style={{ color: "#db1818" }}>{d.date_str}</p>
+                                    </>
+                                    :
+                                    <>
+                                        <h3>{d.day}</h3>
+                                        <p>{d.date_str}</p>
+                                    </>
+                                }
+
                             </div>
                         );
                     })

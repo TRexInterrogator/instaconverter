@@ -4,7 +4,7 @@
     justify-content: space-evenly;
     background-color: black;
     color: white; 
-    padding: 20px 0px;
+    padding: 50px 90px;
 }
 
 .cal-month-layout-date {
@@ -14,12 +14,12 @@
 .cal-month-layout-date p {
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 40px;
     margin-top: 3px;
 }
 
 .cal-month-layout-date h3 {
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 40px;
 }
