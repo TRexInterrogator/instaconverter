@@ -5,6 +5,7 @@ import { CalcMonthDates, GenerateYearOptions, IDate, LayoutOpts, MonthOptions } 
 import "./CalendarLayout.css";
 import { PrimaryButton } from "../../Components/PrimaryButton/PrimaryButton";
 import html2canvas from "html2canvas";
+import { ColorPicker } from "../../Components/ColorPicker/ColorPicker";
 
 
 export const CalendarLayoutPage = () => {
@@ -17,6 +18,7 @@ export const CalendarLayoutPage = () => {
 
     const [ sel_year, setSelYear ] = useState(new Date().getFullYear());
     const [ sel_month, setSelMonth ] = useState(1);
+    const [ sel_bg, setSelBG ] = useState("#000");
     const [ layout_data, setLayoutData ] = useState(CalcMonthDates(new Date().getFullYear(), 1));
     const [ sel_layout, setSelLayout ] = useState(LayoutOpts[0].data as number);
     const [ img_filename, setImgFilename ] = useState<string>(`${new Date().getFullYear()}-1-layout.png`);
@@ -75,6 +77,12 @@ export const CalendarLayoutPage = () => {
                         label="Layout:"
                         onChange={opt => setSelLayout(opt.data)}
                         options={layout_opts} />
+
+                    <ColorPicker 
+                        default_value="#000000"
+                        onChange={v => setSelBG(v)}
+                        style={{ marginLeft: "10px" }} 
+                        label="BG-Color:" />
                 </div>
             </CenterContent>
             
@@ -82,7 +90,7 @@ export const CalendarLayoutPage = () => {
             <br />
 
             <div ref={_ref_print} style={{ width: `${sel_layout}px` }}>
-                <div className="cal-month-layout">
+                <div className="cal-month-layout" style={{ backgroundColor: `${sel_bg}` }}>
                     { layout_data.map(d => {
                         return (
                             <div key={d.index} className="cal-month-layout-date">
