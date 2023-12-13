@@ -1,4 +1,3 @@
-import { CSSProperties } from "react";
 import { IDropdownOption } from "../Dropdown/Dropdown";
 
 export const ImageSizes: IDropdownOption[] = [
