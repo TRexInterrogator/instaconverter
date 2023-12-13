@@ -109,7 +109,7 @@ export const ImageEditor = () => {
                     style={{ width: `${img_size}px`, height: `${img_size}px` }} 
                     className="image-editor-img">
                         <div style={{ padding: `${img_border}%` }}>
-                            <img alt="insta image" src={img_data} />
+                            <img alt="insta" src={img_data} />
                         </div>
                 </div>
             }

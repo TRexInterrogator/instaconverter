@@ -3,6 +3,7 @@
 
 *.tar
 .DS_Store
+*.sln
 
 # User-specific files
 *.suo

@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { CenterContent } from "../../Components/CenterContent/CenterContent";
 import { Dropdown, IDropdownOption } from "../../Components/Dropdown/Dropdown";
-import { CalcMonthDates, GenerateYearOptions, IDate, LayoutOpts, MonthOptions } from "./CalendarLayoutData";
+import { CalcMonthDates, GenerateYearOptions, LayoutOpts, MonthOptions } from "./CalendarLayoutData";
 import "./CalendarLayout.css";
 import { PrimaryButton } from "../../Components/PrimaryButton/PrimaryButton";
 import html2canvas from "html2canvas";
